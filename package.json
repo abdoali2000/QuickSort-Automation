@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "benchmark": "node benchmark.js",
+    "benchmark:simple": "node benchmark-simple.js",
+    "benchmark:all": "echo '📊 Running comprehensive benchmarks...' && npm run benchmark && echo '\n' && npm run benchmark:simple"
+  },
+  "jest": {
+    "testMatch": ["**/*.test.js"],
+    "testPathIgnorePatterns": ["/node_modules/"]
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
